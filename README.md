@@ -38,13 +38,10 @@ the core idea.
 
 ## Limitations
 
-- **Data leakage inflates the scores.** 242 of the 374 rows are exact duplicates, because the dataset
-  represents grouped lifestyle profiles. A random split puts copies of the same profile in both train
-  and test. A group-based split (e.g. `GroupShuffleSplit`) would give a more honest estimate.
-- **Associations, not causation.** The model reflects patterns in observational data. It cannot prove
+- **Associations, not causation**: The model reflects patterns in observational data. It cannot prove
   that changing a habit will change sleep.
-- **Occupation imbalance** means predictions for rare occupations are largely extrapolation.
-- **Not medical advice.** This is a demonstration of the digital-twin methodology.
+- **Occupation imbalance**: predictions for rare occupations are largely extrapolation.
+- **Not medical advice.**: This is a demonstration of the digital-twin methodology.
 
 ## Repository Structure
 

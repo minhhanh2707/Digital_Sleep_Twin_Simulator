@@ -34,7 +34,8 @@ the core idea.
 2. **EDA and correlation analysis:** distributions, categorical balance, sleep quality by group, correlation heatmap.
 3. **Hypotheses stated up front,** then checked against the data.
 4. **Modeling:** scikit-learn `Pipeline` with `StandardScaler` (numeric) and `OneHotEncoder` (categorical), an 80/20 split, then Linear Regression vs. Random Forest.
-5. **Digital twin:** `predict_quality()` and `simulate()` helpers, single and combined what-if scenarios, and lever sweeps across a feature's full range.
+5. **Data leakage investigation**: Used GroupShuffleSplit instead of train_test_split, keeing identical lifestyle profiles together in either the training or test set to investigate whether duplicate-profile overlap artificially inflated model performance.
+6. **Digital twin:** `predict_quality()` and `simulate()` helpers, single and combined what-if scenarios, and lever sweeps across a feature's full range.
 
 ## Limitations
 
